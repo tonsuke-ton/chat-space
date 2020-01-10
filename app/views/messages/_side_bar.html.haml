@@ -1,0 +1,23 @@
+.chat-side
+  .side-header
+    .side-header__box
+      %p.side-header__box__user-name
+        名前
+      %ul
+        %li<
+          = link_to "#", class: "side-header__icon" do
+            %i.fa.fa-pen-square.icon
+        %li<
+          = link_to "#", class: "side-header__icon" do
+            %i.fa.fa-cog.icon
+  .group-list
+    .group
+      %p.group__group-name
+        グループ1
+      %p.group__latest-message
+        まだメッセージがありません
+    .group
+      %p.group__group-name
+        グループ2
+      %p.group__latest-message
+        まだメッセージがありません
