@@ -1,0 +1,37 @@
+.chat-main
+  .main-header
+    .main-header__box
+      %p.main-header__group-name
+        test
+      %ul.main-header__member-list
+        Member:
+        %li.main-header__member-list_member
+          masa
+    %a{:href => "#"}
+      .main-header__edit-btn
+        Edit
+  .messages
+    .message
+      .message__info
+        %p.message__info__member
+          name
+        %p.message__info__date
+          2020/1/10
+      %p.message__text
+        おはよう。
+      .message
+      .message__info
+        %p.message__info__member
+          name
+        %p.message__info__date
+          2020/1/10
+      %p.message__text
+        こんにちは。
+  .form
+    %form.new_message
+      .input-box
+        %input{type:"text",class:"input-box__text",placeholder:"type a message"}
+        %label{class: "input-box__image"}
+          %i.fa.fa-image.icon
+          %input{type:"file",class: "input-box__image__file"}
+      %input{type:"submit",class:"submit-btn"}
