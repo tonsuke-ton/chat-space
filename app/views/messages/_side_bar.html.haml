@@ -2,14 +2,14 @@
   .side-header
     .side-header__box
       %p.side-header__box__user-name
-        名前
+        = current_user.name
       %ul
         %li<
           = link_to "#", class: "side-header__icon" do
             %i.fa.fa-pen-square.icon
         %li<
-          = link_to "#", class: "side-header__icon" do
-            %i.fa.fa-cog.icon
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
   .group-list
     .group
       %p.group__group-name
