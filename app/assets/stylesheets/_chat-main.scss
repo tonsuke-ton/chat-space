@@ -38,6 +38,7 @@
 
   a{
     color: $btnColor;
+    text-decoration: none;
   }
 }
 
@@ -46,17 +47,17 @@
     height: calc(100vh - 190px);
     background-color: #fafafa;
     overflow: scroll;
-  }
+    padding: 46px 40px;
 
   .message{
-    padding: 35px 0px 46px 40px;
-  
+    padding-bottom: 40px;
+  }
 
-    &__info{
+  .upper-message{
     display: flex;
     margin-bottom: 12px;
 
-    &__member{
+    &__user-name{
     font-size: 16px;
     color: #333333;
   }
@@ -66,13 +67,13 @@
     font-size: 12px;
     margin-left: 10px;
   }
-    }
 
-
-  &__text{
+  .lower-message__content{
     color: $textColor;
     font-size: 14px;
+    margin-bottom: 10px;
   }
+}
 }
 
 
